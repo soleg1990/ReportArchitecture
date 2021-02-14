@@ -1,15 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using System.Threading.Tasks;
+using System.Threading;
 
 namespace ReportArchitecture.Reports
 {
-    public class FileReport : IReport
+    public class FileReport : IPrint
     {
-        public async Task SendReport(ComputationResult result)
+        public void Print(ProcessResult result)
         {
-            await Task.Delay(500);
+            Thread.Sleep(500);
             Console.WriteLine("Report sent to file");
         }
     }

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ReportArchitecture
 {
-    public class ComputationResult
+    public class ProcessResult
     {
     }
 }

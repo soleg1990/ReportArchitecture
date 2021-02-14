@@ -2,8 +2,8 @@
 
 namespace ReportArchitecture
 {
-    public interface IComputation
+    public interface IProcess
     {
-        Task<ComputationResult> Compute();
+        void Process();
     }
 }

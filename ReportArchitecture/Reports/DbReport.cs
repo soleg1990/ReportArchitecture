@@ -1,15 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using System.Threading.Tasks;
+using System.Threading;
 
 namespace ReportArchitecture.Reports
 {
-    public class DbReport : IReport
+    public class DbReport : IPrint
     {
-        public async Task SendReport(ComputationResult result)
+        public void Print(ProcessResult result)
         {
-            await Task.Delay(1000);
+            Thread.Sleep(1000);
             Console.WriteLine("Report sent to db");
         }
     }

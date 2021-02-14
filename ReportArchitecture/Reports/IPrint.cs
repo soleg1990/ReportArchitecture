@@ -2,8 +2,8 @@
 
 namespace ReportArchitecture.Reports
 {
-    public interface IReport
+    public interface IPrint
     {
-        Task SendReport(ComputationResult result);
+        void Print(ProcessResult result);
     }
 }
